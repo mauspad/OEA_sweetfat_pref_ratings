@@ -252,7 +252,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="mouse = event.Mouse(visible=False)&amp;#10;&amp;#10;like_slider.marker.size=(2,.1);&amp;#10;like_slider.marker.color='Red';&amp;#10;&amp;#10;mouse.setPos((0,0))&amp;#10;like_slider.markerPos=0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="x = mouse.getPos()[1]&amp;#10;like_slider.markerPos=(x//5)&amp;#10;&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Like', like_slider.markerPos)&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="x = mouse.getPos()[1]&amp;#10;like_slider.markerPos=(x / 5)&amp;#10;&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Like', like_slider.markerPos)&amp;#10;    continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -453,7 +453,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="mouse = event.Mouse(visible=False)&amp;#10;&amp;#10;intense_slider.marker.size=(2,.1);&amp;#10;intense_slider.marker.color='Red';&amp;#10;&amp;#10;mouse.setPos((0,0))&amp;#10;intense_slider.markerPos=0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="x = mouse.getPos()[1]&amp;#10;intense_slider.markerPos=(x//5)&amp;#10;&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Intense', intense_slider.markerPos)&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="x = mouse.getPos()[1]&amp;#10;intense_slider.markerPos= (x / 5)&amp;#10;&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Intense', intense_slider.markerPos)&amp;#10;    continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -547,7 +547,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="mouse = event.Mouse(visible=False)&amp;#10;&amp;#10;sweet_slider.marker.size=(2,.1);&amp;#10;sweet_slider.marker.color='Red';&amp;#10;&amp;#10;mouse.setPos((0,0))&amp;#10;sweet_slider.markerPos=0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="x = mouse.getPos()[1]&amp;#10;sweet_slider.markerPos=(x//5)&amp;#10;&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Sweet', sweet_slider.markerPos)&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="x = mouse.getPos()[1]&amp;#10;sweet_slider.markerPos= (x/5)&amp;#10;&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Sweet', sweet_slider.markerPos)&amp;#10;    continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -724,7 +724,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="win.mouseVisible = False&amp;#10;&amp;#10;vas_slider.marker.size=(.1,2)&amp;#10;vas_slider.marker.color='Red'&amp;#10;&amp;#10;mouse_vas.setPos((-500,0))&amp;#10;vas_slider.markerPos=0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="x = mouse_vas.getPos()[0]&amp;#10;vas_slider.markerPos= 500 + (x)&amp;#10;&amp;#10;#if mouse.getPressed()[0]:&amp;#10;#    trials.addData('VAS', vas_slider.markerPos)&amp;#10;#    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="x = mouse_vas.getPos()[0]&amp;#10;vas_slider.markerPos= (500 + x)&amp;#10;&amp;#10;#if mouse.getPressed()[0]:&amp;#10;#    trials.addData('VAS', vas_slider.markerPos)&amp;#10;#    continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -826,9 +826,9 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
     </Routine>
-    <Routine name="wait">
+    <Routine name="Preference">
       <TextComponent name="text">
-        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="color" updates="constant" val="Black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
@@ -847,9 +847,9 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Wait for instructions" valType="str"/>
+        <Param name="text" updates="constant" val="Preference ratings - Press enter to continue" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="2000" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp">
         <Param name="allowedKeys" updates="constant" val="'return'" valType="code"/>
@@ -865,7 +865,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
@@ -885,7 +885,6 @@
     </LoopInitiator>
     <Routine name="internal_state"/>
     <LoopTerminator name="IS1_pre_trials"/>
-    <Routine name="wait"/>
     <LoopInitiator loopType="TrialHandler" name="trayno">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('TrayNo', 'Tray 1 Ratings')]), OrderedDict([('TrayNo', 'Tray 2 Ratings')])]" valType="str"/>
@@ -927,8 +926,8 @@
     <Routine name="VAS"/>
     <LoopTerminator name="VAS_trials"/>
     <LoopTerminator name="trials"/>
+    <Routine name="Preference"/>
     <LoopTerminator name="trayno"/>
-    <Routine name="wait"/>
     <LoopInitiator loopType="TrialHandler" name="IS2_post_trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('Question', 'How hungry are you right now?'), ('LabelL', 'Not hungry at all'), ('LabelR', 'More hungry than anything')]), OrderedDict([('Question', 'How full are you right now?'), ('LabelL', 'Not full at all'), ('LabelR', 'More full than anything')]), OrderedDict([('Question', 'How thirsty are you right now?'), ('LabelL', 'Not thirsty at all'), ('LabelR', 'More thirsty than anything')]), OrderedDict([('Question', 'How anxious are you right now?'), ('LabelL', 'Not anxious at all'), ('LabelR', 'More anxious than anything')]), OrderedDict([('Question', 'How badly do you need to pee right now?'), ('LabelL', 'Not at all'), ('LabelR', 'More than anything')])]" valType="str"/>
